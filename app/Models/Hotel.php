@@ -12,8 +12,4 @@ class Hotel extends Model
         'description',
         'image'
     ];
-
-    public function rooms() {
-        return $this->hasMany('App\Models\Room');
-    }
 }
