@@ -1,11 +1,11 @@
 <?php
 
 
-use App\Models\Rooms;
+use App\Models\Reservations;
 
 use Illuminate\Database\Seeder;
 
-class RoomsTableSeeder extends Seeder
+class ReservationsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class RoomsTableSeeder extends Seeder
      */
     public function run()
     {
-        $rooms = [
+        $reservations = [
             [
                 'user_id' => '1',
                 'room_id' => '1',
@@ -52,14 +52,14 @@ class RoomsTableSeeder extends Seeder
             ]
         ];
 
-        foreach ($rooms as $rooms) {
-            Rooms::create(array(
-                'user_id' => $rooms['user_id'],
-                'room_id' => $rooms['room_id'],
-                'num_of_guests' => $rooms['number_of_guests'],
-                'arrival' => $rooms['arrival'],
-                'departure' => $rooms['departure']
+        foreach ($reservations as $reservations) {
+            Reservations::create(array(
+                'user_id' => $reservations['user_id'],
+                'room_id' => $reservations['room_id'],
+                'num_of_guests' => $reservations['number_of_guests'],
+                'arrival' => $reservations['arrival'],
+                'departure' => $reservations['departure']
             ));
-
+        }
     }
 }
