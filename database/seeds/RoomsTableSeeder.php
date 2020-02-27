@@ -61,5 +61,6 @@ class RoomsTableSeeder extends Seeder
                 'departure' => $rooms['departure']
             ));
 
+        }
     }
 }
