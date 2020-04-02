@@ -1,5 +1,5 @@
 <form action="/hotels/store.php" method="post">
-
+@csrf
     <input type="text" id="name" name="Name:"><br><br>
     <input type="text" id="address1" name="Address1:"><br><br>
     <input type="text" id="address2" name="Address2:"><br><br>
